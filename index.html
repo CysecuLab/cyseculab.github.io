@@ -166,6 +166,8 @@
       </div>
       <div class="solutions__tabs fade-up">
         <button class="solutions__tab active" data-target="sol-tmaf"><span style="background:var(--accent);color:#fff;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:6px;font-weight:700;">대표</span>TMAF</button>
+        <button class="solutions__tab" data-target="sol-tsa">TSA</button>
+        <button class="solutions__tab" data-target="sol-tpa">TPA</button>
         <button class="solutions__tab" data-target="sol-dpf">DPF</button>
         <button class="solutions__tab" data-target="sol-ccbox">CC-BOX</button>
         <button class="solutions__tab" data-target="sol-ccsbom">CC-SBOM</button>
@@ -194,6 +196,56 @@
             </div>
             <div class="solution-detail__image">
               <img src="assets/images/solution-tmaf.png" alt="TMAF 아키텍처">
+            </div>
+          </div>
+        </div>
+        <div class="solutions__panel" id="sol-tsa">
+          <div class="solution-detail">
+            <div class="solution-detail__info">
+              <p class="solution-detail__name">TSA</p>
+              <h3 class="solution-detail__title">Trusted Safety for Multiple AI Agents</h3>
+              <p class="solution-detail__desc">다수의 AI 에이전트가 협력·경쟁하는 멀티 에이전트 환경에서 에이전트 간 상호작용을 안전하게 모니터링·제어하는 통합형 보안 프레임워크입니다.</p>
+              <ul class="solution-detail__features">
+                <li>통합형 멀티 에이전트 프레임워크 — 단일 제어 평면에서 모든 에이전트 모니터링</li>
+                <li>에이전트 입출력 보호 — 민감정보 유출 및 프롬프트 인젝션 대응</li>
+                <li>에이전트 모델 보호 및 DRM 라이선스 관리</li>
+                <li>모델 탈취 방지 (Model Extraction Attack 차단)</li>
+              </ul>
+              <div class="solution-detail__tags">
+                <span class="badge">AI Agent Safety</span>
+                <span class="badge">Multi-Agent System</span>
+                <span class="badge">입출력 보호</span>
+                <span class="badge">DRM 라이선스</span>
+              </div>
+              <a href="solutions/tsa.html" class="btn btn--primary" style="margin-top: 20px;">자세히 보기</a>
+            </div>
+            <div class="solution-detail__image">
+              <img src="assets/images/solution-tsa.png" alt="TSA 아키텍처">
+            </div>
+          </div>
+        </div>
+        <div class="solutions__panel" id="sol-tpa">
+          <div class="solution-detail">
+            <div class="solution-detail__info">
+              <p class="solution-detail__name">TPA</p>
+              <h3 class="solution-detail__title">Trusted Privacy Filter Agent</h3>
+              <p class="solution-detail__desc">ChatGPT, Claude, Gemini 등 AI 서비스에 입력하는 개인정보(PII)와 영업비밀을 자동 탐지·가명화한 뒤, AI 응답을 원래 정보로 복원하는 프라이버시 필터 에이전트입니다. 브라우저 확장 형태로 즉시 적용 가능합니다.</p>
+              <ul class="solution-detail__features">
+                <li>PII 및 영업비밀 자동 탐지·가명화 — 이름·연락처·계좌 등</li>
+                <li>AI 기반 맥락 분석 가명화 — 문맥 유지하며 자연스러운 대체 값 사용</li>
+                <li>웹 브라우저 확장 프로그램 — 별도 설치 없이 즉시 적용</li>
+                <li>Membership Inference / Model Inversion 공격 방어</li>
+              </ul>
+              <div class="solution-detail__tags">
+                <span class="badge">Privacy Protection</span>
+                <span class="badge">PII Filtering</span>
+                <span class="badge">가명화 처리</span>
+                <span class="badge">브라우저 확장</span>
+              </div>
+              <a href="solutions/tpa.html" class="btn btn--primary" style="margin-top: 20px;">자세히 보기</a>
+            </div>
+            <div class="solution-detail__image">
+              <img src="assets/images/solution-tpa.png" alt="TPA 아키텍처">
             </div>
           </div>
         </div>
