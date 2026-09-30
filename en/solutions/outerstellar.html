@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Outerstellar - Hardware-based Instruction-flow Safety Monitor | 사이시큐연구소</title>
-  <meta name="description" content="하드웨어 기반으로 명령어 흐름을 모니터링하여 시스템 무결성을 보장하는 Outerstellar">
+  <title>Outerstellar - Hardware-based Instruction-flow Safety Monitor | CySecuLab</title>
+  <meta name="description" content="Outerstellar, which monitors instruction flow through hardware to ensure system integrity">
+  <link rel="canonical" href="https://cyseculab.com/en/solutions/outerstellar.html">
+  <link rel="alternate" hreflang="en" href="https://cyseculab.com/en/solutions/outerstellar.html">
+  <link rel="alternate" hreflang="ko" href="https://cyseculab.com/solutions/outerstellar.html">
+  <link rel="alternate" hreflang="x-default" href="https://cyseculab.com/solutions/outerstellar.html">
   <link rel="canonical" href="https://cyseculab.com/solutions/outerstellar.html">
   <link rel="alternate" hreflang="ko" href="https://cyseculab.com/solutions/outerstellar.html">
   <link rel="alternate" hreflang="en" href="https://cyseculab.com/en/solutions/outerstellar.html">
   <link rel="alternate" hreflang="x-default" href="https://cyseculab.com/solutions/outerstellar.html">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" type="image/png" href="../assets/images/logo.png">
-  <link rel="stylesheet" href="../ppt-style.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="stylesheet" href="../../ppt-style.css">
   <style>
     .sol-hero {
       position: relative;
@@ -284,18 +288,19 @@
   <nav class="nav">
     <div class="nav__inner">
       <a href="../index.html" class="nav__logo">
-        <img src="../assets/images/logo-white.png" alt="CySecuLab">
-        <span class="nav__logo-text">사이시큐연구소</span>
+        <img src="../../assets/images/logo-white.png" alt="CySecuLab">
+        <span class="nav__logo-text">CySecuLab</span>
       </a>
       <ul class="nav__links">
-        <li><a href="../index.html#about">소개</a></li>
-        <li><a href="../index.html#capabilities">역량</a></li>
-        <li><a href="../index.html#solutions">솔루션</a></li>
-        <li><a href="../index.html#achievements">성과</a></li>
-        <li><a href="../index.html#team">연구진</a></li>
-        <li><a href="../index.html#contact">문의</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#capabilities">Capabilities</a></li>
+        <li><a href="../index.html#solutions">Solutions</a></li>
+        <li><a href="../index.html#achievements">Achievements</a></li>
+        <li><a href="../index.html#team">Team</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li class="nav__lang"><a href="../../solutions/outerstellar.html" hreflang="ko" lang="ko">KO</a><span aria-hidden="true">/</span><span class="nav__lang-current" aria-current="true">EN</span></li>
       </ul>
-      <button class="nav__mobile-toggle" aria-label="메뉴 열기">
+      <button class="nav__mobile-toggle" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -306,7 +311,7 @@
     <div class="sol-hero__content">
       <div class="sol-hero__label">Outerstellar</div>
       <h1 class="sol-hero__title">Hardware-based<br>Instruction-flow Safety Monitor</h1>
-      <p class="sol-hero__subtitle">하드웨어 기반으로 시스템의 명령어 흐름을 모니터링하여 OS 커널 무결성을 실시간으로 보장하는 보안 솔루션</p>
+      <p class="sol-hero__subtitle">A security solution that monitors a system's instruction flow through hardware to guarantee OS kernel integrity in real time</p>
     </div>
   </section>
 
@@ -314,29 +319,27 @@
   <section class="section">
     <div class="container">
       <div class="section__header fade-up">
-        <h2 class="section__title">Outerstellar란 무엇인가?</h2>
-        <p class="section__subtitle">소프트웨어로는 막을 수 없는 위협을 하드웨어로 차단</p>
+        <h2 class="section__title">What Is Outerstellar?</h2>
+        <p class="section__subtitle">Blocking with hardware the threats that software cannot stop</p>
       </div>
       <div class="overview-grid fade-up" style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;">
         <div>
           <span class="about__label">Hardware-based Instruction-flow Safety Monitor</span>
           <p class="about__text" style="text-align: left; margin-top: 16px;">
-            루트킷, 커널 익스플로잇 등 OS 커널을 공격하는 고급 위협은 소프트웨어 기반 보안 솔루션으로는
-            탐지와 방어에 근본적인 한계가 있습니다. 공격자가 OS를 장악하면 소프트웨어 모니터 자체를 우회할 수 있기 때문입니다.
+            Advanced threats that attack the OS kernel, such as rootkits and kernel exploits, are fundamentally limited in how well software-based security solutions can detect and defend against them. Once an attacker takes control of the OS, the software monitor itself can be bypassed.
           </p>
           <p class="about__text" style="text-align: left;">
-            Outerstellar는 CPU 하드웨어 수준에서 명령어 흐름(Instruction Flow)을 모니터링하여 OS가
-            손상되거나 조작된 경우에도 무결성 위반을 즉각적으로 탐지합니다. ACM CCS에 게재된 Interstellar 연구를 기반으로 합니다.
+            Outerstellar monitors the instruction flow at the CPU hardware level and immediately detects integrity violations even when the OS has been compromised or manipulated. It is based on the Interstellar research published at ACM CCS.
           </p>
           <div class="about__badges" style="justify-content: flex-start;">
             <span class="badge">Hardware Security</span>
             <span class="badge">Integrity Monitor</span>
-            <span class="badge">커널 보안</span>
-            <span class="badge">ACM CCS 검증</span>
+            <span class="badge">Kernel Security</span>
+            <span class="badge">ACM CCS Validated</span>
           </div>
         </div>
         <div class="solution-image-wrap">
-          <img src="../assets/images/solution-outerstellar.png" alt="Outerstellar 아키텍처">
+          <img src="../../assets/images/solution-outerstellar.png" alt="Outerstellar architecture">
         </div>
       </div>
 
@@ -344,39 +347,37 @@
       <div class="research-badge fade-up">
         <div class="research-badge__icon"><i class="fa-solid fa-award"></i></div>
         <div class="research-badge__content">
-          <div class="research-badge__label">학술적 기반</div>
-          <div class="research-badge__title">ACM CCS "Interstellar" 연구 기반 기술</div>
+          <div class="research-badge__label">Academic Foundation</div>
+          <div class="research-badge__title">Technology Based on ACM CCS "Interstellar" Research</div>
           <div class="research-badge__desc">
-            Outerstellar는 세계 최고 보안 학술대회 중 하나인 ACM CCS(Conference on Computer and Communications Security)에
-            게재된 "Interstellar" 연구 논문을 기반으로 합니다. 학계와 업계 양측에서 검증된 원천 기술로 구현되어
-            학문적 엄밀성과 실용적 효용성을 동시에 갖추고 있습니다.
+            Outerstellar is based on the "Interstellar" research paper published at ACM CCS (Conference on Computer and Communications Security), one of the world's top security conferences. Implemented with core technology validated by both academia and industry, it combines academic rigor with practical utility.
           </div>
         </div>
       </div>
 
       <!-- HW vs SW Comparison -->
       <div class="fade-up">
-        <h3 style="text-align: center; font-size: 22px; font-weight: 700; color: var(--primary); margin-top: 56px; margin-bottom: 8px;">왜 하드웨어 기반이어야 하는가</h3>
-        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 0;">소프트웨어 모니터의 한계를 하드웨어로 극복합니다</p>
+        <h3 style="text-align: center; font-size: 22px; font-weight: 700; color: var(--primary); margin-top: 56px; margin-bottom: 8px;">Why It Must Be Hardware-Based</h3>
+        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 0;">Overcoming the limits of software monitors with hardware</p>
         <div class="hw-vs-sw">
           <div class="comparison-card comparison-card--sw">
-            <div class="comparison-card__label">기존 방식</div>
-            <h3 class="comparison-card__title">소프트웨어 기반 모니터링</h3>
+            <div class="comparison-card__label">Conventional Approach</div>
+            <h3 class="comparison-card__title">Software-Based Monitoring</h3>
             <ul class="comparison-list">
-              <li>OS가 손상되면 모니터도 함께 우회 가능</li>
-              <li>루트킷에 의해 모니터 자체가 비활성화될 수 있음</li>
-              <li>OS 커널 내부의 악성 코드 탐지에 한계</li>
-              <li>공격자가 모니터링 로직을 수정·삭제 가능</li>
+              <li>If the OS is compromised, the monitor can be bypassed along with it</li>
+              <li>The monitor itself can be disabled by a rootkit</li>
+              <li>Limited ability to detect malicious code inside the OS kernel</li>
+              <li>Attackers can modify or delete the monitoring logic</li>
             </ul>
           </div>
           <div class="comparison-card comparison-card--hw">
             <div class="comparison-card__label">Outerstellar</div>
-            <h3 class="comparison-card__title">하드웨어 기반 모니터링</h3>
+            <h3 class="comparison-card__title">Hardware-Based Monitoring</h3>
             <ul class="comparison-list">
-              <li>OS와 독립적인 하드웨어 계층에서 모니터링</li>
-              <li>소프트웨어로는 모니터를 조작·우회 불가</li>
-              <li>CPU 명령어 흐름을 하드웨어 수준에서 직접 검증</li>
-              <li>OS가 완전히 손상된 후에도 탐지 가능</li>
+              <li>Monitors from a hardware layer independent of the OS</li>
+              <li>Software cannot tamper with or bypass the monitor</li>
+              <li>Directly verifies CPU instruction flow at the hardware level</li>
+              <li>Can detect even after the OS has been fully compromised</li>
             </ul>
           </div>
         </div>
@@ -388,29 +389,29 @@
   <section class="section section--alt">
     <div class="container">
       <div class="section__header fade-up">
-        <h2 class="section__title">핵심 기능</h2>
-        <p class="section__subtitle">하드웨어 수준 무결성 보장을 위한 4대 핵심 역량</p>
+        <h2 class="section__title">Key Features</h2>
+        <p class="section__subtitle">Four core capabilities for hardware-level integrity assurance</p>
       </div>
       <div class="feature-grid fade-up">
         <div class="feature-card">
           <div class="feature-card__icon"><i class="fa-solid fa-microchip"></i></div>
-          <h3 class="feature-card__title">하드웨어 수준 명령어 흐름 모니터링</h3>
-          <p class="feature-card__desc">CPU의 명령어 실행 흐름(Control Flow)을 하드웨어 수준에서 실시간으로 추적합니다. 정상적인 실행 경로에서 벗어나는 모든 이상 행위를 즉각적으로 탐지하고 차단합니다.</p>
+          <h3 class="feature-card__title">Hardware-Level Instruction Flow Monitoring</h3>
+          <p class="feature-card__desc">Tracks the CPU's instruction execution flow (Control Flow) in real time at the hardware level. Any anomalous behavior that deviates from the normal execution path is detected and blocked immediately.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3 class="feature-card__title">OS 커널 무결성 실시간 검증</h3>
-          <p class="feature-card__desc">운영체제 커널의 코드 영역, 데이터 구조, 시스템 콜 테이블 등 핵심 영역의 무결성을 실시간으로 검증합니다. 루트킷, 커널 익스플로잇 등의 공격을 즉시 탐지합니다.</p>
+          <h3 class="feature-card__title">Real-Time OS Kernel Integrity Verification</h3>
+          <p class="feature-card__desc">Verifies in real time the integrity of key areas of the operating system kernel, such as code regions, data structures, and the system call table. Attacks such as rootkits and kernel exploits are detected immediately.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon"><i class="fa-solid fa-lock"></i></div>
-          <h3 class="feature-card__title">소프트웨어 조작 불가능한 HW 보안</h3>
-          <p class="feature-card__desc">모니터링 시스템 자체가 하드웨어에 구현되어 있어 악성 소프트웨어나 공격자가 모니터링 기능을 비활성화하거나 우회하는 것이 원천적으로 불가능합니다.</p>
+          <h3 class="feature-card__title">Hardware Security That Software Cannot Tamper With</h3>
+          <p class="feature-card__desc">Because the monitoring system itself is implemented in hardware, it is fundamentally impossible for malicious software or attackers to disable or bypass the monitoring function.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon"><i class="fa-solid fa-trophy"></i></div>
-          <h3 class="feature-card__title">ACM CCS "Interstellar" 검증 기술</h3>
-          <p class="feature-card__desc">세계 최고 보안 학술대회 ACM CCS에 게재된 연구를 기반으로 학문적으로 엄밀하게 검증된 기술을 적용합니다. 이론적 안전성 증명과 실험적 검증을 모두 갖춘 신뢰할 수 있는 솔루션입니다.</p>
+          <h3 class="feature-card__title">ACM CCS "Interstellar" Validated Technology</h3>
+          <p class="feature-card__desc">Applies technology that has been rigorously validated academically, based on research published at ACM CCS, one of the world's top security conferences. A trustworthy solution backed by both theoretical security proofs and experimental validation.</p>
         </div>
       </div>
     </div>
@@ -420,39 +421,39 @@
   <section class="section">
     <div class="container">
       <div class="section__header fade-up">
-        <h2 class="section__title">적용 분야</h2>
-        <p class="section__subtitle">Outerstellar가 시스템 무결성을 보장하는 핵심 환경</p>
+        <h2 class="section__title">Use Cases</h2>
+        <p class="section__subtitle">Key environments where Outerstellar ensures system integrity</p>
       </div>
       <div class="usecase-list fade-up">
         <div class="usecase-item">
           <div class="usecase-item__icon"><i class="fa-solid fa-server"></i></div>
-          <h3 class="usecase-item__title">클라우드 서버 인프라</h3>
-          <p class="usecase-item__desc">하이퍼바이저와 VM의 커널 무결성을 하드웨어 수준에서 실시간 검증하여 클라우드 인프라의 신뢰성 보장</p>
+          <h3 class="usecase-item__title">Cloud Server Infrastructure</h3>
+          <p class="usecase-item__desc">Ensures the reliability of cloud infrastructure by verifying the kernel integrity of hypervisors and VMs in real time at the hardware level</p>
         </div>
         <div class="usecase-item">
           <div class="usecase-item__icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3 class="usecase-item__title">국방·사이버전 대응</h3>
-          <p class="usecase-item__desc">국가 수준의 사이버 공격(APT)에서도 핵심 시스템의 무결성을 보장하는 고신뢰 보안 기반 구축</p>
+          <h3 class="usecase-item__title">Defense and Cyber Warfare Response</h3>
+          <p class="usecase-item__desc">Builds a highly trusted security foundation that ensures the integrity of critical systems even against nation-state-level cyberattacks (APT)</p>
         </div>
         <div class="usecase-item">
           <div class="usecase-item__icon"><i class="fa-solid fa-industry"></i></div>
-          <h3 class="usecase-item__title">산업 제어 시스템</h3>
-          <p class="usecase-item__desc">발전소, 정수장 등 핵심 인프라의 제어 시스템이 사이버 공격으로 조작되지 않도록 하드웨어 수준에서 보호</p>
+          <h3 class="usecase-item__title">Industrial Control Systems</h3>
+          <p class="usecase-item__desc">Protects at the hardware level the control systems of critical infrastructure such as power plants and water treatment plants from being manipulated by cyberattacks</p>
         </div>
         <div class="usecase-item">
           <div class="usecase-item__icon"><i class="fa-solid fa-car"></i></div>
-          <h3 class="usecase-item__title">자율주행·임베디드</h3>
-          <p class="usecase-item__desc">자율주행 차량, 드론 등 임베디드 시스템의 펌웨어 및 OS 무결성을 하드웨어로 보장하여 안전한 자율 운행 지원</p>
+          <h3 class="usecase-item__title">Autonomous Driving and Embedded Systems</h3>
+          <p class="usecase-item__desc">Supports safe autonomous operation by guaranteeing firmware and OS integrity of embedded systems such as autonomous vehicles and drones with hardware</p>
         </div>
         <div class="usecase-item">
           <div class="usecase-item__icon"><i class="fa-solid fa-coins"></i></div>
-          <h3 class="usecase-item__title">금융 핵심 시스템</h3>
-          <p class="usecase-item__desc">ATM, 결제 단말기, 은행 코어 시스템 등 금융 인프라의 OS 무결성을 검증하여 금융 사기 및 해킹 차단</p>
+          <h3 class="usecase-item__title">Core Financial Systems</h3>
+          <p class="usecase-item__desc">Blocks financial fraud and hacking by verifying the OS integrity of financial infrastructure such as ATMs, payment terminals, and core banking systems</p>
         </div>
         <div class="usecase-item">
           <div class="usecase-item__icon"><i class="fa-solid fa-hospital"></i></div>
-          <h3 class="usecase-item__title">의료 장비</h3>
-          <p class="usecase-item__desc">생명 유지 장치, 수술 로봇 등 안전 중요 의료 장비의 소프트웨어 무결성을 하드웨어 수준에서 실시간 검증</p>
+          <h3 class="usecase-item__title">Medical Equipment</h3>
+          <p class="usecase-item__desc">Verifies in real time at the hardware level the software integrity of safety-critical medical equipment such as life-support devices and surgical robots</p>
         </div>
       </div>
     </div>
@@ -461,10 +462,10 @@
   <!-- CTA -->
   <section class="sol-cta">
     <div class="container">
-      <h2 class="sol-cta__title fade-up">Outerstellar로 시스템의 근원적 보안을 확보하세요</h2>
-      <p class="sol-cta__desc fade-up">ACM CCS 검증 기술 기반의 하드웨어 무결성 모니터링 솔루션 도입에 대해 전문 연구진이 안내해 드립니다.</p>
+      <h2 class="sol-cta__title fade-up">Secure your systems at the root with Outerstellar</h2>
+      <p class="sol-cta__desc fade-up">Our expert researchers will guide you through adopting a hardware integrity monitoring solution based on technology validated at ACM CCS.</p>
       <div class="fade-up">
-        <a href="../index.html#contact" class="btn btn--secondary">지금 문의하기</a>
+        <a href="../index.html#contact" class="btn btn--secondary">Contact us now</a>
       </div>
     </div>
   </section>
@@ -472,13 +473,14 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p class="footer__logo">사이시큐연구소 | CySecuLab</p>
-      <p class="footer__text">연결된 모든 사이버 공간을 안전하게 보호하는 시스템 보안 연구소</p>
-      <p class="footer__text">대전광역시 유성구 대학로 291, KAIST</p>
-      <p class="footer__copyright">&copy; 2023-2026 주식회사 사이시큐연구소. All rights reserved.</p>
+      <p class="footer__logo">CySecuLab</p>
+      <p class="footer__text">A systems security research lab protecting every connected cyberspace</p>
+      <p class="footer__text">U.S. headquarters: 3003 North First Street, San Jose, CA 95134, USA</p>
+      <p class="footer__text">R&amp;D center in Korea: KAIST, 291 Daehak-ro, Yuseong-gu, Daejeon, Korea</p>
+      <p class="footer__copyright">&copy; 2023-2026 CySecuLab Inc. and CySecuLab Co., Ltd. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="../script.js"></script>
+  <script src="../../script.js"></script>
 </body>
 </html>

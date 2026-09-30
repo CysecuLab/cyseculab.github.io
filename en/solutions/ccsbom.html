@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CC-SBOM - Confidential Computing SBOM | 사이시큐연구소</title>
-  <meta name="description" content="CC-BOX 안전 실행 환경과 연계하여 SBOM을 안전하게 생성하고 취약점을 관리하는 CC-SBOM">
+  <title>CC-SBOM - Confidential Computing SBOM | CySecuLab</title>
+  <meta name="description" content="CC-SBOM, which works with the CC-BOX secure execution environment to generate SBOMs securely and manage vulnerabilities">
+  <link rel="canonical" href="https://cyseculab.com/en/solutions/ccsbom.html">
+  <link rel="alternate" hreflang="en" href="https://cyseculab.com/en/solutions/ccsbom.html">
+  <link rel="alternate" hreflang="ko" href="https://cyseculab.com/solutions/ccsbom.html">
+  <link rel="alternate" hreflang="x-default" href="https://cyseculab.com/solutions/ccsbom.html">
   <link rel="canonical" href="https://cyseculab.com/solutions/ccsbom.html">
   <link rel="alternate" hreflang="ko" href="https://cyseculab.com/solutions/ccsbom.html">
   <link rel="alternate" hreflang="en" href="https://cyseculab.com/en/solutions/ccsbom.html">
   <link rel="alternate" hreflang="x-default" href="https://cyseculab.com/solutions/ccsbom.html">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" type="image/png" href="../assets/images/logo.png">
-  <link rel="stylesheet" href="../ppt-style.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="stylesheet" href="../../ppt-style.css">
   <style>
     .sol-hero {
       position: relative;
@@ -239,18 +243,19 @@
   <nav class="nav">
     <div class="nav__inner">
       <a href="../index.html" class="nav__logo">
-        <img src="../assets/images/logo-white.png" alt="CySecuLab">
-        <span class="nav__logo-text">사이시큐연구소</span>
+        <img src="../../assets/images/logo-white.png" alt="CySecuLab">
+        <span class="nav__logo-text">CySecuLab</span>
       </a>
       <ul class="nav__links">
-        <li><a href="../index.html#about">소개</a></li>
-        <li><a href="../index.html#capabilities">역량</a></li>
-        <li><a href="../index.html#solutions">솔루션</a></li>
-        <li><a href="../index.html#achievements">성과</a></li>
-        <li><a href="../index.html#team">연구진</a></li>
-        <li><a href="../index.html#contact">문의</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#capabilities">Capabilities</a></li>
+        <li><a href="../index.html#solutions">Solutions</a></li>
+        <li><a href="../index.html#achievements">Achievements</a></li>
+        <li><a href="../index.html#team">Team</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li class="nav__lang"><a href="../../solutions/ccsbom.html" hreflang="ko" lang="ko">KO</a><span aria-hidden="true">/</span><span class="nav__lang-current" aria-current="true">EN</span></li>
       </ul>
-      <button class="nav__mobile-toggle" aria-label="메뉴 열기">
+      <button class="nav__mobile-toggle" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -261,7 +266,7 @@
     <div class="sol-hero__content">
       <div class="sol-hero__label">CC-SBOM</div>
       <h1 class="sol-hero__title">Confidential Computing SBOM</h1>
-      <p class="sol-hero__subtitle">CC-BOX 안전 실행 환경과 연계하여 소프트웨어 구성 명세서를 안전하게 생성하고 취약점을 실시간 관리하는 솔루션</p>
+      <p class="sol-hero__subtitle">A solution that works with the CC-BOX secure execution environment to securely generate a software bill of materials and manage vulnerabilities in real time</p>
     </div>
   </section>
 
@@ -269,40 +274,34 @@
   <section class="section">
     <div class="container">
       <div class="section__header fade-up">
-        <h2 class="section__title">CC-SBOM이란 무엇인가?</h2>
-        <p class="section__subtitle">소프트웨어 공급망 보안과 기밀성을 동시에 달성</p>
+        <h2 class="section__title">What Is CC-SBOM?</h2>
+        <p class="section__subtitle">Achieving software supply chain security and confidentiality at the same time</p>
       </div>
       <div class="overview-grid fade-up" style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;">
         <div>
           <span class="about__label">Confidential Computing SBOM</span>
           <p class="about__text" style="text-align: left; margin-top: 16px;">
-            SBOM(Software Bill of Materials)은 소프트웨어를 구성하는 모든 컴포넌트 목록으로, 취약점 관리와
-            공급망 보안의 핵심입니다. 그러나 SBOM 생성을 위해 소스코드나 바이너리를 외부 서비스에 제공하면
-            기밀 정보가 유출될 수 있습니다.
+            An SBOM (Software Bill of Materials) is a list of all components that make up a piece of software and is central to vulnerability management and supply chain security. However, providing source code or binaries to an external service to generate an SBOM can leak confidential information.
           </p>
           <p class="about__text" style="text-align: left;">
-            CC-SBOM은 CC-BOX의 신뢰 실행 환경(TEE)에서 SBOM을 생성하여 사용자의 소스코드와 영업비밀을
-            노출하지 않고도 정확한 SBOM과 실시간 취약점 정보를 제공합니다.
+            CC-SBOM generates SBOMs inside the Trusted Execution Environment (TEE) of CC-BOX, providing accurate SBOMs and real-time vulnerability information without exposing the user's source code or trade secrets.
           </p>
           <div class="about__badges" style="justify-content: flex-start;">
             <span class="badge">SBOM</span>
             <span class="badge">Supply Chain Security</span>
             <span class="badge">Vulnerability Management</span>
-            <span class="badge">TEE 기반 분석</span>
+            <span class="badge">TEE-Based Analysis</span>
           </div>
         </div>
         <div class="solution-image-wrap">
-          <img src="../assets/images/solution-ccsbom.png" alt="CC-SBOM 아키텍처">
+          <img src="../../assets/images/solution-ccsbom.png" alt="CC-SBOM architecture">
         </div>
       </div>
 
       <div class="sbom-explain fade-up">
-        <h3 class="sbom-explain__title"><i class="fa-solid fa-file-code" style="color: var(--accent); margin-right: 10px;"></i>SBOM(Software Bill of Materials)이란?</h3>
+        <h3 class="sbom-explain__title"><i class="fa-solid fa-file-code" style="color: var(--accent); margin-right: 10px;"></i>What Is an SBOM (Software Bill of Materials)?</h3>
         <p class="sbom-explain__desc">
-          SBOM은 소프트웨어에 포함된 모든 오픈소스, 서드파티 라이브러리, 내부 컴포넌트의 목록입니다.
-          미국 행정명령(EO 14028), EU CRA 등 주요 국가와 지역에서 SBOM 제출을 의무화하고 있으며,
-          Log4Shell 같은 공급망 취약점 사태로 인해 SBOM의 중요성이 급부상하고 있습니다.
-          CC-SBOM은 이러한 SBOM을 소스코드 노출 없이 안전하게 생성합니다.
+          An SBOM is a list of all open-source software, third-party libraries, and internal components included in a piece of software. Major countries and regions require SBOM submission through measures such as the U.S. Executive Order (EO 14028) and the EU CRA, and supply chain vulnerability incidents such as Log4Shell have sharply raised the importance of SBOMs. CC-SBOM generates these SBOMs securely without exposing source code.
         </p>
       </div>
     </div>
@@ -312,29 +311,29 @@
   <section class="section section--alt">
     <div class="container">
       <div class="section__header fade-up">
-        <h2 class="section__title">핵심 기능</h2>
-        <p class="section__subtitle">안전한 SBOM 관리를 위한 4대 핵심 역량</p>
+        <h2 class="section__title">Key Features</h2>
+        <p class="section__subtitle">Four core capabilities for secure SBOM management</p>
       </div>
       <div class="feature-grid fade-up">
         <div class="feature-card">
           <div class="feature-card__icon"><i class="fa-solid fa-user-secret"></i></div>
-          <h3 class="feature-card__title">사용자 기밀정보 유출 방지</h3>
-          <p class="feature-card__desc">SBOM 분석 시 소스코드, 바이너리, 영업비밀 등 기밀 정보를 CC-BOX 신뢰 실행 환경(TEE)에서 처리하여 서비스 제공자도 접근할 수 없도록 완전히 보호합니다.</p>
+          <h3 class="feature-card__title">Prevention of User Confidential Information Leakage</h3>
+          <p class="feature-card__desc">During SBOM analysis, confidential information such as source code, binaries, and trade secrets is processed in the CC-BOX Trusted Execution Environment (TEE) and fully protected so that even the service provider cannot access it.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon"><i class="fa-solid fa-bell"></i></div>
-          <h3 class="feature-card__title">실시간 취약점 관리 서비스</h3>
-          <p class="feature-card__desc">생성된 SBOM을 CVE, NVD 등 취약점 데이터베이스와 실시간으로 대조하여 새로운 취약점 발견 시 즉시 알림을 제공합니다. Log4Shell 같은 제로데이 공격에도 신속하게 대응합니다.</p>
+          <h3 class="feature-card__title">Real-Time Vulnerability Management Service</h3>
+          <p class="feature-card__desc">Generated SBOMs are checked in real time against vulnerability databases such as CVE and NVD, with immediate alerts when new vulnerabilities are found. It also responds quickly to zero-day attacks such as Log4Shell.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon"><i class="fa-solid fa-code-branch"></i></div>
-          <h3 class="feature-card__title">SW 자산 및 IP 보호</h3>
-          <p class="feature-card__desc">클라우드 또는 외부 서버에서 SBOM 분석 서비스를 이용할 때 소프트웨어 자산과 지적재산이 서버 운영자에게 노출되지 않도록 CC-BOX TEE로 분석 전 과정을 보호합니다.</p>
+          <h3 class="feature-card__title">Software Asset and IP Protection</h3>
+          <p class="feature-card__desc">When using an SBOM analysis service on a cloud or external server, the entire analysis process is protected by the CC-BOX TEE so that software assets and intellectual property are not exposed to the server operator.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon"><i class="fa-solid fa-industry"></i></div>
-          <h3 class="feature-card__title">규제 분야 특화 지원</h3>
-          <p class="feature-card__desc">의료기기 SW(IEC 62304), 금융 시스템, 자동차 OEM(UNECE WP.29), 산업 제어 시스템(IEC 62443) 등 SBOM 의무화가 진행 중인 규제 산업 분야에 특화된 SBOM 형식과 보고서를 제공합니다.</p>
+          <h3 class="feature-card__title">Specialized Support for Regulated Sectors</h3>
+          <p class="feature-card__desc">Provides SBOM formats and reports specialized for regulated industries where SBOM mandates are underway, such as medical device software (IEC 62304), financial systems, automotive OEMs (UNECE WP.29), and industrial control systems (IEC 62443).</p>
         </div>
       </div>
     </div>
@@ -344,38 +343,38 @@
   <section class="section">
     <div class="container">
       <div class="section__header fade-up">
-        <h2 class="section__title">모든 이해관계자를 보호합니다</h2>
-        <p class="section__subtitle">CC-SBOM은 SBOM 생태계의 모든 주체를 동시에 보호합니다</p>
+        <h2 class="section__title">Protecting All Stakeholders</h2>
+        <p class="section__subtitle">CC-SBOM protects every party in the SBOM ecosystem at the same time</p>
       </div>
       <div class="stakeholder-grid fade-up">
         <div class="stakeholder-card">
-          <div class="stakeholder-card__role">사용자 보호</div>
-          <h3 class="stakeholder-card__title">소프트웨어 사용 기업</h3>
+          <div class="stakeholder-card__role">User Protection</div>
+          <h3 class="stakeholder-card__title">Software-Using Companies</h3>
           <ul class="stakeholder-card__list">
-            <li>도입 소프트웨어의 취약 컴포넌트 실시간 파악</li>
-            <li>공급망 공격에 대한 사전 대응 가능</li>
-            <li>SBOM 기반 보안 감사 및 규제 대응 자동화</li>
-            <li>내부 소프트웨어 자산 현황 투명하게 관리</li>
+            <li>Real-time identification of vulnerable components in adopted software</li>
+            <li>Proactive response to supply chain attacks</li>
+            <li>Automation of SBOM-based security audits and regulatory compliance</li>
+            <li>Transparent management of internal software assets</li>
           </ul>
         </div>
         <div class="stakeholder-card">
-          <div class="stakeholder-card__role">제공자 보호</div>
-          <h3 class="stakeholder-card__title">소프트웨어 개발·공급사</h3>
+          <div class="stakeholder-card__role">Provider Protection</div>
+          <h3 class="stakeholder-card__title">Software Developers and Suppliers</h3>
           <ul class="stakeholder-card__list">
-            <li>소스코드 노출 없이 SBOM 생성 및 제공</li>
-            <li>소프트웨어 구성에 대한 신뢰성 입증</li>
-            <li>고객사의 SBOM 요구사항에 안전하게 대응</li>
-            <li>지적재산 보호와 투명성 동시 달성</li>
+            <li>Generate and provide SBOMs without exposing source code</li>
+            <li>Demonstrate the trustworthiness of software composition</li>
+            <li>Respond securely to customers' SBOM requirements</li>
+            <li>Achieve intellectual property protection and transparency at the same time</li>
           </ul>
         </div>
         <div class="stakeholder-card">
-          <div class="stakeholder-card__role">취약점 DB 보호</div>
-          <h3 class="stakeholder-card__title">취약점 관리 서비스</h3>
+          <div class="stakeholder-card__role">Vulnerability DB Protection</div>
+          <h3 class="stakeholder-card__title">Vulnerability Management Services</h3>
           <ul class="stakeholder-card__list">
-            <li>취약점 데이터베이스의 기밀성 유지</li>
-            <li>SBOM-CVE 매핑 정보의 무결성 보장</li>
-            <li>제로데이 취약점 정보의 안전한 배포</li>
-            <li>감사 가능한 취약점 분석 결과 제공</li>
+            <li>Maintain the confidentiality of vulnerability databases</li>
+            <li>Ensure the integrity of SBOM-CVE mapping information</li>
+            <li>Secure distribution of zero-day vulnerability information</li>
+            <li>Provide auditable vulnerability analysis results</li>
           </ul>
         </div>
       </div>
@@ -386,39 +385,39 @@
   <section class="section section--alt">
     <div class="container">
       <div class="section__header fade-up">
-        <h2 class="section__title">적용 분야</h2>
-        <p class="section__subtitle">SBOM 의무화가 진행 중인 주요 규제 산업 분야</p>
+        <h2 class="section__title">Use Cases</h2>
+        <p class="section__subtitle">Key regulated industries where SBOM mandates are underway</p>
       </div>
       <div class="usecase-list fade-up">
         <div class="usecase-item">
           <div class="usecase-item__icon"><i class="fa-solid fa-heartbeat"></i></div>
-          <h3 class="usecase-item__title">의료기기 소프트웨어</h3>
-          <p class="usecase-item__desc">FDA, IEC 62304 기준 의료기기 SW의 SBOM 의무 제출 요구사항을 소스코드 노출 없이 충족</p>
+          <h3 class="usecase-item__title">Medical Device Software</h3>
+          <p class="usecase-item__desc">Meets mandatory SBOM submission requirements for medical device software under FDA and IEC 62304 without exposing source code</p>
         </div>
         <div class="usecase-item">
           <div class="usecase-item__icon"><i class="fa-solid fa-coins"></i></div>
-          <h3 class="usecase-item__title">금융 시스템</h3>
-          <p class="usecase-item__desc">금융감독원 및 국제 금융 규제의 소프트웨어 공급망 보안 요구사항을 준수하는 SBOM 관리 체계 구축</p>
+          <h3 class="usecase-item__title">Financial Systems</h3>
+          <p class="usecase-item__desc">Builds an SBOM management framework that complies with the software supply chain security requirements of the Financial Supervisory Service and international financial regulations</p>
         </div>
         <div class="usecase-item">
           <div class="usecase-item__icon"><i class="fa-solid fa-car-side"></i></div>
-          <h3 class="usecase-item__title">자동차 OEM</h3>
-          <p class="usecase-item__desc">UNECE WP.29, ISO/SAE 21434 기준 차량 SW의 사이버보안 관리를 위한 SBOM 생성 및 취약점 관리</p>
+          <h3 class="usecase-item__title">Automotive OEMs</h3>
+          <p class="usecase-item__desc">SBOM generation and vulnerability management for cybersecurity management of vehicle software under UNECE WP.29 and ISO/SAE 21434</p>
         </div>
         <div class="usecase-item">
           <div class="usecase-item__icon"><i class="fa-solid fa-gear"></i></div>
-          <h3 class="usecase-item__title">산업 제어 시스템</h3>
-          <p class="usecase-item__desc">IEC 62443 기준 OT/ICS 환경의 소프트웨어 컴포넌트 보안 관리를 위한 SBOM 체계 적용</p>
+          <h3 class="usecase-item__title">Industrial Control Systems</h3>
+          <p class="usecase-item__desc">Applies an SBOM framework to the security management of software components in OT/ICS environments under IEC 62443</p>
         </div>
         <div class="usecase-item">
           <div class="usecase-item__icon"><i class="fa-solid fa-cloud"></i></div>
-          <h3 class="usecase-item__title">클라우드 서비스</h3>
-          <p class="usecase-item__desc">EU CRA(Cyber Resilience Act) 등 클라우드 소프트웨어에 요구되는 SBOM 공개 의무를 기밀성을 유지하며 준수</p>
+          <h3 class="usecase-item__title">Cloud Services</h3>
+          <p class="usecase-item__desc">Complies with SBOM disclosure obligations required of cloud software, such as the EU CRA (Cyber Resilience Act), while maintaining confidentiality</p>
         </div>
         <div class="usecase-item">
           <div class="usecase-item__icon"><i class="fa-solid fa-landmark"></i></div>
-          <h3 class="usecase-item__title">공공·국방</h3>
-          <p class="usecase-item__desc">미국 행정명령(EO 14028) 등 정부 조달 소프트웨어에 요구되는 SBOM 제출 의무를 안전하게 이행</p>
+          <h3 class="usecase-item__title">Public Sector and Defense</h3>
+          <p class="usecase-item__desc">Securely fulfills the SBOM submission obligations required of government procurement software, such as under the U.S. Executive Order (EO 14028)</p>
         </div>
       </div>
     </div>
@@ -427,10 +426,10 @@
   <!-- CTA -->
   <section class="sol-cta">
     <div class="container">
-      <h2 class="sol-cta__title fade-up">CC-SBOM으로 공급망 보안을 강화하세요</h2>
-      <p class="sol-cta__desc fade-up">SBOM 의무화 대응과 소프트웨어 기밀정보 보호를 동시에 달성하는 방법을 안내해 드립니다.</p>
+      <h2 class="sol-cta__title fade-up">Strengthen supply chain security with CC-SBOM</h2>
+      <p class="sol-cta__desc fade-up">We will show you how to meet SBOM mandates and protect software confidential information at the same time.</p>
       <div class="fade-up">
-        <a href="../index.html#contact" class="btn btn--secondary">지금 문의하기</a>
+        <a href="../index.html#contact" class="btn btn--secondary">Contact us now</a>
       </div>
     </div>
   </section>
@@ -438,13 +437,14 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p class="footer__logo">사이시큐연구소 | CySecuLab</p>
-      <p class="footer__text">연결된 모든 사이버 공간을 안전하게 보호하는 시스템 보안 연구소</p>
-      <p class="footer__text">대전광역시 유성구 대학로 291, KAIST</p>
-      <p class="footer__copyright">&copy; 2023-2026 주식회사 사이시큐연구소. All rights reserved.</p>
+      <p class="footer__logo">CySecuLab</p>
+      <p class="footer__text">A systems security research lab protecting every connected cyberspace</p>
+      <p class="footer__text">U.S. headquarters: 3003 North First Street, San Jose, CA 95134, USA</p>
+      <p class="footer__text">R&amp;D center in Korea: KAIST, 291 Daehak-ro, Yuseong-gu, Daejeon, Korea</p>
+      <p class="footer__copyright">&copy; 2023-2026 CySecuLab Inc. and CySecuLab Co., Ltd. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="../script.js"></script>
+  <script src="../../script.js"></script>
 </body>
 </html>

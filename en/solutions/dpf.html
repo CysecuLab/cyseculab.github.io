@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DPF - Dialect Perimeter Filter | CySecuLab</title>
+  <meta name="description" content="DPF, a next-generation security system that protects network perimeters with a unique Dialect-based communication scheme">
+  <link rel="canonical" href="https://cyseculab.com/en/solutions/dpf.html">
+  <link rel="alternate" hreflang="en" href="https://cyseculab.com/en/solutions/dpf.html">
+  <link rel="alternate" hreflang="ko" href="https://cyseculab.com/solutions/dpf.html">
+  <link rel="alternate" hreflang="x-default" href="https://cyseculab.com/solutions/dpf.html">
+  <link rel="canonical" href="https://cyseculab.com/solutions/dpf.html">
+  <link rel="alternate" hreflang="ko" href="https://cyseculab.com/solutions/dpf.html">
+  <link rel="alternate" hreflang="en" href="https://cyseculab.com/en/solutions/dpf.html">
+  <link rel="alternate" hreflang="x-default" href="https://cyseculab.com/solutions/dpf.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="stylesheet" href="../../ppt-style.css">
+  <style>
+    .sol-hero {
+      position: relative;
+      min-height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #001642 0%, #00246C 40%, #003D96 70%, #0088EE 100%);
+      color: #fff;
+      padding-top: 72px;
+    }
+    .sol-hero__content {
+      position: relative;
+      z-index: 1;
+      padding: 60px 24px;
+    }
+    .sol-hero__label {
+      display: inline-block;
+      background: rgba(137,204,255,0.2);
+      color: #89CCFF;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 18px;
+      border-radius: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .sol-hero__title {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    .sol-hero__subtitle {
+      font-size: 18px;
+      opacity: 0.85;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--card-gap);
+    }
+    .feature-card {
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      box-shadow: var(--shadow);
+      border-top: 4px solid var(--accent);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+    .feature-card__icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(0,136,238,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+    .feature-card__title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    .feature-card__desc {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .usecase-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--card-gap);
+    }
+    .usecase-item {
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .usecase-item__icon {
+      font-size: 36px;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .usecase-item__title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .usecase-item__desc {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .sol-cta {
+      background: linear-gradient(135deg, #00246C, #0088EE);
+      color: #fff;
+      text-align: center;
+      padding: 80px 24px;
+    }
+    .sol-cta__title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .sol-cta__desc {
+      font-size: 18px;
+      opacity: 0.85;
+      margin-bottom: 36px;
+    }
+    .solution-image-wrap {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-hover);
+      background: var(--bg-alt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
+    }
+    .solution-image-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .dialect-explain {
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 40px;
+      box-shadow: var(--shadow);
+      border-left: 6px solid var(--accent);
+      margin-top: 40px;
+    }
+    .dialect-explain__title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .dialect-explain__desc {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+    @media (max-width: 768px) {
+      .sol-hero__title { font-size: 28px; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .usecase-list { grid-template-columns: 1fr; }
+      .overview-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <img src="../../assets/images/logo-white.png" alt="CySecuLab">
+        <span class="nav__logo-text">CySecuLab</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#capabilities">Capabilities</a></li>
+        <li><a href="../index.html#solutions">Solutions</a></li>
+        <li><a href="../index.html#achievements">Achievements</a></li>
+        <li><a href="../index.html#team">Team</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li class="nav__lang"><a href="../../solutions/dpf.html" hreflang="ko" lang="ko">KO</a><span aria-hidden="true">/</span><span class="nav__lang-current" aria-current="true">EN</span></li>
+      </ul>
+      <button class="nav__mobile-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="sol-hero">
+    <div class="sol-hero__content">
+      <div class="sol-hero__label">DPF</div>
+      <h1 class="sol-hero__title">Dialect Perimeter Filter</h1>
+      <p class="sol-hero__subtitle">A next-generation security system that protects network perimeters using a unique Dialect-based communication scheme</p>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header fade-up">
+        <h2 class="section__title">What Is DPF?</h2>
+        <p class="section__subtitle">An innovative Dialect-based approach to network security</p>
+      </div>
+      <div class="overview-grid fade-up" style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;">
+        <div>
+          <span class="about__label">Dialect Perimeter Filter</span>
+          <p class="about__text" style="text-align: left; margin-top: 16px;">
+            Conventional network security relies on static defenses based on IP addresses and ports, leaving it vulnerable to sophisticated intrusion attempts. DPF protects network perimeters with an innovative approach that assigns a unique "Dialect" to each device and system.
+          </p>
+          <p class="about__text" style="text-align: left;">
+            Only communications carrying an authorized Dialect can enter the network, so external attackers cannot communicate at all — security at the source. It can be applied to a broad range of environments, from IoT to kernel-level networking.
+          </p>
+          <div class="about__badges" style="justify-content: flex-start;">
+            <span class="badge">Network Security</span>
+            <span class="badge">Zero Trust</span>
+            <span class="badge">IoT Security</span>
+            <span class="badge">Korean Patent</span>
+          </div>
+        </div>
+        <div class="solution-image-wrap">
+          <img src="../../assets/images/solution-dpf.png" alt="DPF architecture">
+        </div>
+      </div>
+
+      <div class="dialect-explain fade-up">
+        <h3 class="dialect-explain__title"><i class="fa-solid fa-comment-dots" style="color: var(--accent); margin-right: 10px;"></i>What Is a Dialect?</h3>
+        <p class="dialect-explain__desc">
+          A Dialect is a unique communication pattern assigned to each device or system. On top of ordinary network protocols, it applies communication rules known only to that device, so that only authorized parties sharing the same Dialect can communicate. An intruder who does not know the Dialect is blocked from communicating at all — security at the source.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certification & Patents -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header fade-up">
+        <h2 class="section__title">Certification and Patents</h2>
+        <p class="section__subtitle">Trusted technology verified for public sector adoption</p>
+      </div>
+      <div class="feature-grid fade-up">
+        <div class="feature-card" style="border-top-color: #10B981;">
+          <div class="feature-card__icon" style="background: rgba(16,185,129,0.1); color: #10B981;"><i class="fa-solid fa-certificate"></i></div>
+          <h3 class="feature-card__title">KISA Rapid Verification Certificate Obtained</h3>
+          <p class="feature-card__desc">
+            CySecuLab Co., Ltd. (Korea) has received certification for DPF under the KISA (Korea Internet &amp; Security Agency) Rapid Verification program. Products with a Rapid Verification certificate can be adopted without a security conformity verification by institutions in <strong>Groups 'Na' and 'Da'</strong> among the organizations subject to security conformity verification of IT security products for the national and public sectors.
+          </p>
+          <ul style="margin-top: 12px; font-size: 14px; color: var(--text-secondary); list-style: none; padding: 0;">
+            <li style="padding: 4px 0;"><strong>Control No.:</strong> No. 2025-006</li>
+            <li style="padding: 4px 0;"><strong>Product name:</strong> Dialect Perimeter Filter V1.0</li>
+            <li style="padding: 4px 0;"><strong>Valid period:</strong> 2025.12.4 ~ 2027.12.3</li>
+          </ul>
+          <a href="../../assets/docs/dpf-kisa-certification.pdf" target="_blank" class="btn btn--primary" style="margin-top: 16px; font-size: 14px; padding: 10px 20px;"><i class="fa-solid fa-file-pdf" style="margin-right: 6px;"></i>View Rapid Verification Certificate</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="fa-solid fa-scroll"></i></div>
+          <h3 class="feature-card__title">Patent Status</h3>
+          <p class="feature-card__desc">A Korean patent has been registered for DPF core technology, and a U.S. patent application is planned.</p>
+          <ul style="margin-top: 12px; font-size: 14px; color: var(--text-secondary); list-style: none; padding: 0;">
+            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">
+              <span style="display: inline-block; background: var(--accent); color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 10px; font-weight: 700; margin-right: 6px;">Korea - Registered</span>
+              <strong>No. 10-2668919</strong> (2024.05.21)<br>
+              <span style="color: var(--text-secondary); font-size: 13px;">Protocol dialect technique for the security of systems connected to a network</span>
+            </li>
+            <li style="padding: 6px 0; margin-top: 8px;">
+              <span style="display: inline-block; background: var(--primary); color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 10px; font-weight: 700; margin-right: 6px;">U.S. Application Planned</span>
+              A new U.S. patent application is planned
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="fade-up" style="text-align: center; margin-top: 36px;">
+        <a href="../../assets/docs/dpf-brochure.pdf" target="_blank" class="btn btn--primary" style="font-size: 15px; padding: 14px 32px;"><i class="fa-solid fa-file-pdf" style="margin-right: 8px;"></i>Download DPF Brochure (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header fade-up">
+        <h2 class="section__title">Key Features</h2>
+        <p class="section__subtitle">Four core capabilities of Dialect-based network security</p>
+      </div>
+      <div class="feature-grid fade-up">
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="fa-solid fa-fingerprint"></i></div>
+          <h3 class="feature-card__title">Dialect-Based Device Authentication and Zero Trust</h3>
+          <p class="feature-card__desc">Implements a Zero Trust architecture that authenticates devices through a unique Dialect. Even inside the network, access is impossible without Dialect authentication, which also blocks internal threats.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="fa-solid fa-wifi"></i></div>
+          <h3 class="feature-card__title">Dialect of Things - IoT Environment Security</h3>
+          <p class="feature-card__desc">Applies Dialect to IoT environments made up of numerous endpoints such as smart devices and industrial IoT equipment, ensuring the integrity of each device and blocking illegal access at the source.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="fa-solid fa-server"></i></div>
+          <h3 class="feature-card__title">Operating System and Kernel-Level Networking Security</h3>
+          <p class="feature-card__desc">Applies Dialect filtering directly to the network stack at the OS kernel level, blocking bypass attacks at the application layer. Provides security at the source at the operating system level.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="fa-solid fa-memory"></i></div>
+          <h3 class="feature-card__title">Remote Memory System Security</h3>
+          <p class="feature-card__desc">In distributed system environments that require remote memory access, Dialect-based authentication ensures that only authorized nodes can access memory. Strengthens security in data center environments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header fade-up">
+        <h2 class="section__title">Use Cases</h2>
+        <p class="section__subtitle">Diverse environments where DPF can strengthen security</p>
+      </div>
+      <div class="usecase-list fade-up">
+        <div class="usecase-item">
+          <div class="usecase-item__icon"><i class="fa-solid fa-industry"></i></div>
+          <h3 class="usecase-item__title">Industrial Control Systems</h3>
+          <p class="usecase-item__desc">Applying DPF to SCADA and ICS systems in critical infrastructure such as power plants and factories protects them from cyberattacks</p>
+        </div>
+        <div class="usecase-item">
+          <div class="usecase-item__icon"><i class="fa-solid fa-city"></i></div>
+          <h3 class="usecase-item__title">Smart City IoT</h3>
+          <p class="usecase-item__desc">Secures communications of urban infrastructure IoT devices such as smart traffic, smart street lighting, and environmental monitoring</p>
+        </div>
+        <div class="usecase-item">
+          <div class="usecase-item__icon"><i class="fa-solid fa-cloud"></i></div>
+          <h3 class="usecase-item__title">Cloud and Data Centers</h3>
+          <p class="usecase-item__desc">Strengthens cloud security through network isolation between tenants and remote memory access control in multi-tenant cloud environments</p>
+        </div>
+        <div class="usecase-item">
+          <div class="usecase-item__icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="usecase-item__title">Defense and Government Networks</h3>
+          <p class="usecase-item__desc">Implements a Dialect-based Zero Trust architecture for the networks of defense and government agencies that require strict access control</p>
+        </div>
+        <div class="usecase-item">
+          <div class="usecase-item__icon"><i class="fa-solid fa-car"></i></div>
+          <h3 class="usecase-item__title">Connected Cars and Mobility</h3>
+          <p class="usecase-item__desc">Applies Dialect to V2X communications of autonomous and connected vehicles to prevent vehicle hacking and malicious signal injection</p>
+        </div>
+        <div class="usecase-item">
+          <div class="usecase-item__icon"><i class="fa-solid fa-hospital"></i></div>
+          <h3 class="usecase-item__title">Medical IoT</h3>
+          <p class="usecase-item__desc">Ensures communication integrity and security of medical IoT devices such as patient monitoring devices and medical imaging equipment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="sol-cta">
+    <div class="container">
+      <h2 class="sol-cta__title fade-up">Protect your network from the ground up with DPF</h2>
+      <p class="sol-cta__desc fade-up">We provide detailed technical explanations of our Dialect-based next-generation network security solution.</p>
+      <div class="fade-up">
+        <a href="../index.html#contact" class="btn btn--secondary">Contact us now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__logo">CySecuLab</p>
+      <p class="footer__text">A systems security research lab protecting every connected cyberspace</p>
+      <p class="footer__text">U.S. headquarters: 3003 North First Street, San Jose, CA 95134, USA</p>
+      <p class="footer__text">R&amp;D center in Korea: KAIST, 291 Daehak-ro, Yuseong-gu, Daejeon, Korea</p>
+      <p class="footer__copyright">&copy; 2023-2026 CySecuLab Inc. and CySecuLab Co., Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

@@ -202,6 +202,26 @@ a:hover {
   width: 100%;
 }
 
+.nav__links .nav__lang {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.nav__links .nav__lang a {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.nav__links .nav__lang a::after {
+  display: none;
+}
+.nav__lang-current {
+  color: var(--accent);
+}
+
 .nav__mobile-toggle {
   display: none;
   background: none;
@@ -758,6 +778,17 @@ a:hover {
   font-size: 14px;
   color: var(--text-secondary);
   margin-bottom: 4px;
+}
+.contact-info__group {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 24px 0 12px;
+}
+.contact-info__group:first-child {
+  margin-top: 0;
 }
 .contact-info__value {
   font-size: 18px;

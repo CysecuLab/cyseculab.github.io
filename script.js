@@ -145,12 +145,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const email = contactForm.querySelector('[name="email"]').value;
       const message = contactForm.querySelector('[name="message"]').value;
 
-      const subject = encodeURIComponent(`[홈페이지 문의] ${name}`);
-      const body = encodeURIComponent(
-        `이름: ${name}\n이메일: ${email}\n\n문의 내용:\n${message}`
+      const isEn = document.documentElement.lang === 'en';
+      const subject = encodeURIComponent(
+        isEn ? `[Website Inquiry] ${name}` : `[홈페이지 문의] ${name}`
       );
+      const body = encodeURIComponent(
+        isEn
+          ? `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+          : `이름: ${name}\n이메일: ${email}\n\n문의 내용:\n${message}`
+      );
+      const to = isEn ? 'inc@cyseculab.com' : 'office1@cyseculab.com';
 
-      window.location.href = `mailto:office1@cyseculab.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
     });
   }
 });
