@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ? `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
           : `이름: ${name}\n이메일: ${email}\n\n문의 내용:\n${message}`
       );
-      const to = isEn ? 'inc@cyseculab.com' : 'office1@cyseculab.com';
+      const to = isEn ? 'ceo@cyseculab.com' : 'office1@cyseculab.com';
 
       window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
     });
