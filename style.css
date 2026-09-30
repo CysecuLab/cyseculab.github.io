@@ -672,6 +672,10 @@ a:hover {
   color: var(--accent);
   margin-bottom: 8px;
 }
+.team__ceo-label a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .team__ceo-name {
   font-size: 28px;
   font-weight: 700;
