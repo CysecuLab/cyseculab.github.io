@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>전시 제품과 기술 | 사이시큐연구소</title>
+  <link rel="icon" type="image/png" href="img/shield.png">
+  <style>
+    :root { --navy: #14213d; --blue: #1d4294; --ink: #1a2233; --sub: #4a5568; --line: #d9dfea; --bg: #f2f5fa; }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; font-size: 17px; line-height: 1.6; word-break: keep-all; overflow-wrap: anywhere; padding-bottom: 112px; }
+    .top { background: var(--navy); color: #fff; padding: 20px 20px 28px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; }
+    .brand img { width: 34px; height: 34px; background: #fff; border-radius: 50%; padding: 3px; }
+    h1 { margin: 22px 0 8px; font-size: 30px; line-height: 1.25; }
+    .lead { margin: 0; color: #d5dcec; }
+    main { max-width: 1120px; margin: 0 auto; padding: 20px 16px 8px; }
+    .cta { display: block; width: 100%; padding: 16px 18px; background: var(--blue); color: #fff; text-align: center; text-decoration: none; font-weight: 700; font-size: 19px; border-radius: 8px; }
+    .cta:active { background: #163372; }
+    .cta-note { margin: 8px 0 0; font-size: 15px; color: var(--sub); text-align: center; }
+    .top .cta { margin-top: 20px; background: #fff; color: var(--navy); }
+    .top .cta-note { color: #d5dcec; }
+    .qr { display: none; }
+    .grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+    .card { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--blue); border-radius: 8px; padding: 20px 18px; }
+    .label { margin: 0; font-size: 15px; font-weight: 600; color: var(--blue); }
+    h2 { margin: 2px 0 0; font-size: 28px; line-height: 1.2; color: var(--navy); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .stage { font-size: 14px; font-weight: 600; color: #7a4b00; background: #fff3d6; border: 1px solid #e6c97a; border-radius: 4px; padding: 2px 8px; }
+    .tagline { margin: 12px 0 0; font-weight: 500; }
+    .features { list-style: none; margin: 16px 0 0; padding: 0; border-top: 1px solid var(--line); }
+    .features li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .features strong { display: block; color: var(--navy); }
+    .features span { display: block; color: var(--sub); font-size: 16px; }
+    .card-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-top: 16px; }
+    .doc { display: inline-block; padding: 11px 16px; border: 1.5px solid var(--blue); border-radius: 8px; color: var(--blue); font-weight: 700; text-decoration: none; }
+    .mail { color: var(--sub); font-size: 15px; }
+    footer { max-width: 1120px; margin: 0 auto; padding: 8px 16px 24px; color: var(--sub); font-size: 14px; text-align: center; }
+    footer a { color: inherit; }
+    .bar { position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); background: #fff; border-top: 1px solid var(--line); }
+    .bar .cta { max-width: 1088px; margin: 0 auto; }
+    @media (min-width: 760px) {
+      .top { padding: 28px 32px 36px; }
+      .top-in { max-width: 1088px; margin: 0 auto; position: relative; min-height: 264px; }
+      .qr { display: block; position: absolute; right: 0; top: 0; width: 213px; padding: 14px 14px 12px; background: #fff; border-radius: 8px; text-align: center; }
+      .qr img { display: block; width: 185px; height: 185px; margin: 0 auto; image-rendering: pixelated; }
+      .qr p { margin: 8px 0 0; font-size: 14px; line-height: 1.4; color: var(--navy); font-weight: 600; }
+      h1 { font-size: 38px; }
+      .top .cta { max-width: 320px; }
+      .top .cta-note { text-align: left; }
+      .grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+      main { padding: 28px 32px 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="top-in">
+      <div class="brand"><img src="img/shield.png" alt="" width="34" height="34">사이시큐연구소</div>
+      <h1>전시 제품과 기술</h1>
+      <p class="lead">오늘 부스에서 소개한 내용입니다. 관심 있는 분야를 남겨 주세요.</p>
+      <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSfxaIKfZJZUsLp0USLtuSzrbkw1L49cEnq7Q1DpYOfxCnXmdw/viewform">관심 분야 남기기</a>
+      <p class="cta-note">구글 설문으로 이동합니다. 1분이면 됩니다.</p>
+      <div class="qr">
+        <img src="img/qr.png" alt="이 페이지로 연결되는 QR" width="185" height="185">
+        <p>휴대폰으로 QR 을 찍으면<br>이 페이지가 열립니다.</p>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="grid">
+      <article class="card" id="tpf">
+        <header>
+          <p class="label">AI 입력 개인정보 보안</p>
+          <h2>TPF</h2>
+        </header>
+        <p class="tagline">생성형 AI에 보내는 글과 문서에서 개인정보와 민감정보를 찾아 가명으로 바꾼 뒤 보냅니다.</p>
+        <ul class="features">
+          <li><strong>민감정보 탐지와 가명 처리</strong><span>주민등록번호·계좌·이름 같은 개인정보와 민감정보를 찾아 가명으로 바꿉니다.</span></li>
+          <li><strong>업무 문서 처리</strong><span>입력한 글과 첨부한 업무 문서를 함께 처리합니다.</span></li>
+          <li><strong>지정 키워드 보호</strong><span>고객명·프로젝트명처럼 회사가 등록한 단어를 빠짐없이 가명으로 바꿉니다.</span></li>
+          <li><strong>주요 생성형 AI 서비스 지원</strong><span>널리 쓰이는 생성형 AI 서비스에서 사용할 수 있습니다.</span></li>
+          <li><strong>사내 환경 설치</strong><span>사설 클라우드와 폐쇄망에 설치해 운영합니다.</span></li>
+        </ul>
+        <div class="card-foot">
+          <a class="doc" href="img/tpf.jpg">소개 자료 보기</a>
+          <a class="mail" href="mailto:tpf@cyseculab.com">tpf@cyseculab.com</a>
+        </div>
+      </article>
+      <article class="card" id="dpf">
+        <header>
+          <p class="label">서비스 경계 보안</p>
+          <h2>DPF</h2>
+        </header>
+        <p class="tagline">미리 허가한 단말과 서비스 호출만 보호 대상 서비스에 연결되도록 하는 제로트러스트 접근 제어입니다.</p>
+        <ul class="features">
+          <li><strong>허가된 단말만 접속</strong><span>미리 허가한 단말의 연결만 받아들이고 그 밖의 접속은 연결 전에 차단합니다.</span></li>
+          <li><strong>공격 표면 축소</strong><span>보호 대상 서비스에 닿을 수 있는 범위를 등록된 단말로 줄입니다.</span></li>
+          <li><strong>내부망 접속도 같은 기준으로 확인</strong><span>내부망에서 들어오는 접속도 외부와 같은 기준으로 확인합니다.</span></li>
+          <li><strong>중앙 정책 관리</strong><span>접근 정책을 중앙에서 한 번에 배포하고 관리합니다.</span></li>
+          <li><strong>AI 에이전트 접근 통제</strong><span>사람의 접속과 함께 AI 에이전트와 자동화 호출의 접근도 정책으로 통제합니다.</span></li>
+        </ul>
+        <div class="card-foot">
+          <a class="doc" href="img/dpf.jpg">소개 자료 보기</a>
+          <a class="mail" href="mailto:dpf@cyseculab.com">dpf@cyseculab.com</a>
+        </div>
+      </article>
+      <article class="card" id="ccsbom">
+        <header>
+          <p class="label">소프트웨어 공급망 보안</p>
+          <h2>CC-SBOM</h2>
+        </header>
+        <p class="tagline">소프트웨어 구성 요소 목록(SBOM)을 만들고, 각 구성 요소가 공개된 취약점이 있는 버전인지 확인합니다.</p>
+        <ul class="features">
+          <li><strong>SBOM 자동 생성</strong><span>소스코드와 바이너리를 분석해 구성 요소 목록을 자동으로 만듭니다.</span></li>
+          <li><strong>공개 취약점 확인</strong><span>구성 요소를 공개된 취약점 정보와 대조해 취약한 버전인지 확인합니다.</span></li>
+          <li><strong>공급업체 SBOM 등록</strong><span>공급업체에서 받은 SBOM을 등록해 함께 분석합니다.</span></li>
+          <li><strong>표준 형식 보고서</strong><span>표준 SBOM 형식과 제출용 보고서로 내보냅니다.</span></li>
+          <li><strong>사내 환경 분석</strong><span>소스코드와 분석 결과를 조직 안에서 처리하며 폐쇄망과 사설 클라우드를 지원합니다.</span></li>
+        </ul>
+        <div class="card-foot">
+          <a class="doc" href="img/ccsbom.jpg">소개 자료 보기</a>
+          <a class="mail" href="mailto:sbom@cyseculab.com">sbom@cyseculab.com</a>
+        </div>
+      </article>
+      <article class="card" id="smas">
+        <header>
+          <p class="label">AI 에이전트 보안</p>
+          <h2>SMAS</h2>
+        </header>
+        <p class="tagline">SMAS는 여러 AI 에이전트가 함께 일하는 환경에서 에이전트 사이의 통신을 지켜보며 위험한 행동을 찾아내고, 유해한 지시를 차단하는 AI 에이전트 보안 기술입니다.</p>
+        <ul class="features">
+          <li><strong>유해 지시 차단</strong><span>에이전트 사이에 오가는 메시지에서 유해한 지시를 찾아 차단합니다.</span></li>
+          <li><strong>비인가 도구 호출 차단</strong><span>에이전트가 허용되지 않은 도구나 외부 API를 호출하려 하면 실행 직전에 막아냅니다.</span></li>
+          <li><strong>악성 지시 추적과 이탈 알림</strong><span>악성 지시가 퍼진 경로를 추적하고, 업무 목표에서 벗어난 에이전트를 찾아 알립니다.</span></li>
+          <li><strong>민감정보 유출 방지</strong><span>에이전트 간 메시지 속 개인정보·기밀 데이터를 가려서 외부 LLM으로 넘어가지 않게 합니다.</span></li>
+        </ul>
+        <div class="card-foot">
+          <a class="doc" href="img/smas.jpg">소개 자료 보기</a>
+          
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer><a href="https://cyseculab.com/">cyseculab.com</a></footer>
+  <div class="bar"><a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSfxaIKfZJZUsLp0USLtuSzrbkw1L49cEnq7Q1DpYOfxCnXmdw/viewform">관심 분야 남기기</a></div>
+</body>
+</html>
